@@ -90,9 +90,9 @@ python Cartoon_Renderer.py
 - 배경이 단순하고 색 대비가 확실할수록, Bilateral Filter로 색 영역이 깔끔하게 뭉치고 윤곽선이 선명하게 추출됩니다.
 
 
-![spiderman1](image\spider_result_1.png)
-![spiderman2](image\spider_result_2.png)
-![chalamet](image\chalamet_result.png)
+![spiderman1](image/spider_result_1.png)
+![spiderman2](image/spider_result_2.png)
+![chalamet](image/chalamet_result.png)
 
 
 ### 4.2 잘 표현되지 않는 이미지
@@ -100,13 +100,13 @@ python Cartoon_Renderer.py
   - 예: 야간 사진, 해상도가 낮은 사진, 군중이 많은 거리 사진
 - 엣지 검출이나 Bilateral Filter가 노이즈를 제대로 걸러내지 못하면, **불필요한 점(노이즈)**들이 많이 생기거나 윤곽선이 지저분해질 수 있습니다.
 
-![forest_noise](image\forest_result_noise.png)
+![forest_noise](image/forest_result_noise.png)
 
 ### 4.3 옵션 사용
 - 노이즈 제거, 색상 양자화, 팔레트 개수 선택을 통해 다양한 느낌으로 이미지를 변환하는 옵션 사용 예시입니다.
 
-![forest1](image\forest_result_1.png)
-![forest2](image\forest_result_2.png)
+![forest1](image/forest_result_1.png)
+![forest2](image/forest_result_2.png)
 
 - 상단 옵션 조절을 통해 원하는 스타일의 이미지를 표현할 수 있습니다.
 ---
