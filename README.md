@@ -1,7 +1,7 @@
 # Cartoon Renderer
 
-이 저장소에서는 OpenCV를 사용하여 이미지를 **만화(cartoon) 스타일**로 변환하는 예제를 다룹니다.  
-`cartoonize_image` 함수를 호출하면 손쉽게 이미지를 만화처럼 보이도록 처리할 수 있습니다.
+OpenCV를 사용하여 이미지를 **만화(cartoon) 스타일**로 변환하는 Cartoon Renderer입니다다.  
+이미지를 만화에 그린 그림처럼 보이도록 처리할 수 있습니다.
 
 ---
 
@@ -89,29 +89,26 @@ python Cartoon_Renderer.py
   - 예: 단색 배경 인물 사진, 애니메이션 캐릭터 그림, 제품 사진 등
 - 배경이 단순하고 색 대비가 확실할수록, Bilateral Filter로 색 영역이 깔끔하게 뭉치고 윤곽선이 선명하게 추출됩니다.
 
-<details>
-<summary>예시 이미지 보기</summary>
 
-| 원본 이미지                   | 결과 이미지                   |
-|------------------------------|------------------------------|
-| (원본 이미지 첨부) | (만화 변환 결과 첨부) |
+![spiderman1](image\spider_result_1.png)
+![spiderman2](image\spider_result_2.png)
+![chalamet](image\chalamet_result.png)
 
-</details>
 
 ### 4.2 잘 표현되지 않는 이미지
 - 배경이 복잡하거나, 조도가 낮아 노이즈가 많은 이미지
   - 예: 야간 사진, 해상도가 낮은 사진, 군중이 많은 거리 사진
 - 엣지 검출이나 Bilateral Filter가 노이즈를 제대로 걸러내지 못하면, **불필요한 점(노이즈)**들이 많이 생기거나 윤곽선이 지저분해질 수 있습니다.
 
-<details>
-<summary>예시 이미지 보기</summary>
+![forest_noise](image\forest_result_noise.png)
 
-| 원본 이미지                   | 결과 이미지                   |
-|------------------------------|------------------------------|
-| (원본 이미지 첨부) | (만화 변환 결과 첨부) |
+### 4.3 옵션 사용
+- 노이즈 제거, 색상 양자화, 팔레트 개수 선택을 통해 다양한 느낌으로 이미지를 변환하는 옵션 사용 예시입니다.
 
-</details>
+![forest1](image\forest_result_1.png)
+![forest2](image\forest_result_2.png)
 
+- 상단 옵션 조절을 통해 원하는 스타일의 이미지를 표현할 수 있습니다.
 ---
 
 ## 5. 알고리즘 한계점
